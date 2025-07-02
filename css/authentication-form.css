@@ -12,6 +12,10 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 20px;
 }
 
 h2 {
@@ -25,8 +29,53 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
   border: 1px solid #a9a9a9;
   padding: 20px;
+}
+
+#sign-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input-control{
+  display: flex;
+  flex-direction: column;;
+  justify-content: center;
+  gap: 2px;
+  padding: 10px;
+}
+
+#state, #city{
+  direction: flex;
+  flex-direction: space-evenly;
+  width: 400px;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .subtext {
@@ -36,6 +85,10 @@ form {
 
 #sign-in,
 #sign-up {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 }
 
